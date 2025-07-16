@@ -16,23 +16,15 @@ def rotate():
     parser.add_argument('-o', '--out',      help='file name of the output PDF',                     type=str, default='rotated.pdf')
     args = parser.parse_args(sys.argv[2:])
 
-    rotated = PDF.new()
-
     path = args.path
     pages = args.pages
     angle = args.angle
 
     # Error checking nonexistent PDF
     validate_file_exists(path)
-
     with PDF.open(path) as pdf:
-        all_pages = expand_pages(pdf, 'all')
         select_pages = expand_pages(pdf, pages)
-        for page_num in all_pages:
-            if page_num in select_pages:
-                rotated.append(pdf.pages[page_num].rotate(angle, False))
-            else:
-                rotated.append(pdf.pages[page_num])
-    
-    filename = get_valid_filename(path)
-    rotated.save(filename)
+        for page_num in select_pages:
+            pdf.pages[page_num].rotate(angle, relative=True)
+        filename = get_valid_filename(path)
+        pdf.save(filename)
