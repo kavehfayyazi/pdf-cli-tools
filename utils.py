@@ -46,8 +46,14 @@ def expand_pages(pdf: PDF, pages: str) -> list:
                     print(f"Error: Invalid page number: {page_range}", file=sys.stderr)
                     sys.exit(1)
                 page_list.append(int(page_range) - 1)
+        if page_list == []:
+            print(f"Error: Invalid page number: {page_range}", file=sys.stderr)
+            sys.exit(1)
         for page_num in page_list:
             if page_num < 0 or page_num >= len(pdf.pages):
                 print(f"Error: Invalid page number: {page_num + 1}", file=sys.stderr)
                 sys.exit(1)
+        # remove duplicates and preserve order
+        seen = set()
+        page_list = [x for x in page_list if not (x in seen or seen.add(x))]
         return page_list

@@ -3,6 +3,7 @@
 import argparse
 import merge
 import rotate
+import delete
 import reverse
 
 if __name__ == "__main__":
@@ -15,6 +16,9 @@ if __name__ == "__main__":
     rotate_parser = subparsers.add_parser("rotate", help="Rotate pages in a PDF")
     rotate.add_arguments(rotate_parser)
 
+    delete_parser = subparsers.add_parser("delete", help="Delete pages in a PDF")
+    delete.add_arguments(delete_parser)
+
     reverse_parser = subparsers.add_parser("reverse", help="Reverse pages in a PDF")
     reverse.add_arguments(reverse_parser)
 
@@ -25,5 +29,7 @@ if __name__ == "__main__":
             merge.run(args)
         case 'rotate':
             rotate.run(args)
+        case 'delete':
+            delete.run(args)
         case 'reverse':
             reverse.run(args)

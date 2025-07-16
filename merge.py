@@ -1,5 +1,4 @@
 import argparse
-import sys
 from pikepdf import Pdf as PDF
 from utils import validate_file_exists, get_valid_filename, expand_pages
 
