@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-tools"
+version = "1.0.0"
+dependencies = ["pikepdf==9.10.0",]
+
+[project.scripts]
+pdf_tools = "pdf_tools.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pdf_tools"]
+exclude = ["test_pdfs"]

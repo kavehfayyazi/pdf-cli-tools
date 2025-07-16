@@ -1,6 +1,6 @@
 import argparse
 from pikepdf import Pdf as PDF
-from utils import validate_file_exists, get_valid_filename, expand_pages
+from pdf_tools.utils import validate_file_exists, get_valid_filename, expand_pages
 
 def add_arguments(parser):
     parser.add_argument('path',             help='file path of the PDF',            type=str)
