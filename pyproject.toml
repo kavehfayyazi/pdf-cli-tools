@@ -8,7 +8,7 @@ version = "1.0.0"
 dependencies = ["pikepdf==9.10.0",]
 
 [project.scripts]
-pdf_tools = "pdf_tools.__main__:main"
+pdf-tools = "pdf_tools.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
