@@ -20,20 +20,10 @@ A lightweight CLI utility for manipulating PDFs.
 
 ## Installation
 
-### Option 1 — Install from PyPI (recommended)
-
-```bash
-pip install pdf-tool
-```
-
-### Option 2 — Install from source
-
 ```bash
 git clone https://github.com/kavehfayyazi/pdf-tool.git
 cd pdf-tool
 pip install --user .
-# or 
-python3 -m pip install --user .
 ```
 
 If `pdf-tool` is not found after install, make sure the appropriate scripts folder is in your `PATH`:
@@ -48,30 +38,16 @@ See [Troubleshooting](#troubleshooting) below for more details.
 
 ### Update to the latest version
 
-If you installed from PyPI:
-
-```bash
-pip install --upgrade --user pdf-tool
-# or
-python3 -m pip install --upgrade --user pdf-tool
-```
-
-If you installed from source:
-
 ```bash
 cd pdf-tool
 git pull origin main
 pip install --user .
-# or
-python3 -m pip install --user .
 ```
 
 ### Uninstall
 
 ```bash
 pip uninstall pdf-tool
-# or
-python3 -m pip uninstall pdf-tool
 ```
 
 ## Usage
