@@ -6,10 +6,10 @@ Parses command-line arguments, validates them, and dispatches to the appropriate
 """
 
 import argparse
-from pdf_tools import merge
-from pdf_tools import rotate
-from pdf_tools import delete
-from pdf_tools import reverse
+from pdfwiz import merge
+from pdfwiz import rotate
+from pdfwiz import delete
+from pdfwiz import reverse
 
 def main():
     """Main entry point for the pdf-tools CLI."""

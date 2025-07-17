@@ -3,7 +3,7 @@ requires = ["setuptools",]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pdf-tools"
+name = "pdfwiz"
 version = "1.0.0"
 readme = "README.md"
 dependencies = [
@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [project.scripts]
-pdf-tools = "pdf_tools.__main__:main"
+pdfwiz = "pdfwiz.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["."]

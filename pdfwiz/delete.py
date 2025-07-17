@@ -7,7 +7,7 @@ Provides functions to delete select pages or ranges of a PDF.
 
 from argparse import ArgumentParser, Namespace
 from pikepdf import Pdf as PDF
-from pdf_tools.utils import validate_file_exists, get_valid_filename, expand_page_ranges
+from pdfwiz.utils import validate_file_exists, get_valid_filename, expand_page_ranges
 
 def add_arguments(parser: ArgumentParser):
     """Appends the 'delete' parser arguments to the parser passed.

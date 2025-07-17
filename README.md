@@ -1,4 +1,4 @@
-# pdf-tools
+# pdf-tool
 
 A lightweight CLI utility for manipulating PDFs.
 
@@ -23,20 +23,20 @@ A lightweight CLI utility for manipulating PDFs.
 ### Option 1 — Install from PyPI (recommended)
 
 ```bash
-pip install pdf-tools
+pip install pdf-tool
 ```
 
 ### Option 2 — Install from source
 
 ```bash
-git clone https://github.com/kavehfayyazi/pdf-tools.git
-cd pdf-tools
+git clone https://github.com/kavehfayyazi/pdf-tool.git
+cd pdf-tool
 pip install --user .
 # or 
 python3 -m pip install --user .
 ```
 
-If `pdf-tools` is not found after install, make sure the appropriate scripts folder is in your `PATH`:
+If `pdf-tool` is not found after install, make sure the appropriate scripts folder is in your `PATH`:
 
 - macOS/Linux: `~/.local/bin`
 
@@ -51,15 +51,15 @@ See [Troubleshooting](#troubleshooting) below for more details.
 If you installed from PyPI:
 
 ```bash
-pip install --upgrade --user pdf-tools 
+pip install --upgrade --user pdf-tool
 # or
-python3 -m pip install --upgrade --user pdf-tools
+python3 -m pip install --upgrade --user pdf-tool
 ```
 
 If you installed from source:
 
 ```bash
-cd pdf-tools
+cd pdf-tool
 git pull origin main
 pip install --user .
 # or
@@ -69,15 +69,15 @@ python3 -m pip install --user .
 ### Uninstall
 
 ```bash
-pip uninstall pdf-tools
+pip uninstall pdf-tool
 # or
-python3 -m pip uninstall pdf-tools
+python3 -m pip uninstall pdf-tool
 ```
 
 ## Usage
 
 ```bash 
-pdf-tools <command> [options]
+pdf-tool <command> [options]
 ```
 
 ### Available commands:
@@ -92,22 +92,22 @@ pdf-tools <command> [options]
 ### Example:
 
 ```bash
-pdf-tools merge file1.pdf file2.pdf -o merged.pdf
-pdf-tools rotate file.pdf -p 1:3 -a 90 -o rotated.pdf
+pdf-tool merge file1.pdf file2.pdf -o merged.pdf
+pdf-tool rotate file.pdf -p 1:3 -a 90 -o rotated.pdf
 ```
 
 Run:
 
 ```bash
-pdf-tools --help
-pdf-tools <command> --help
+pdf-tool --help
+pdf-tool <command> --help
 ```
 
 for full options.
 
 ## Specifying Pages and Ranges
 
-Many commands in `pdf-tools` allow you to operate on specific pages or ranges of pages in a PDF.
+Many commands in `pdf-tool` allow you to operate on specific pages or ranges of pages in a PDF.
 
 You can specify pages using:
 
@@ -133,8 +133,8 @@ You can specify pages using:
 2. **Clone** your fork locally:
 
     ```bash
-    git clone https://github.com/<your-username>/pdf-tools.git
-    cd pdf-tools
+    git clone https://github.com/<your-username>/pdf-tool.git
+    cd pdf-tool
     ```
 
 3. **Create** a new branch:
@@ -174,7 +174,7 @@ Your Python "scripts" folder may not be in your PATH.
 
     Add `%APPDATA%\Python\Scripts` to your User PATH via System &rarr; Environment Variables.
 
-Then restart your terminal and try `pdf-tools --help` again.
+Then restart your terminal and try `pdf-tool --help` again.
 
 ## License
 

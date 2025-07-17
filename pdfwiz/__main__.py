@@ -1,4 +1,4 @@
-from pdf_tools import cli
+from pdfwiz import cli
 
 def main():
     cli.main()
