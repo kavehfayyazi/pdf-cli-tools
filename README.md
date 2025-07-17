@@ -1,4 +1,4 @@
-# pdf-tool
+# pdfwiz
 
 A lightweight CLI utility for manipulating PDFs.
 
@@ -21,12 +21,12 @@ A lightweight CLI utility for manipulating PDFs.
 ## Installation
 
 ```bash
-git clone https://github.com/kavehfayyazi/pdf-tool.git
-cd pdf-tool
+git clone https://github.com/kavehfayyazi/pdfwiz.git
+cd pdfwiz
 pip install --user .
 ```
 
-If `pdf-tool` is not found after install, make sure the appropriate scripts folder is in your `PATH`:
+If `pdfwiz` is not found after install, make sure the appropriate scripts folder is in your `PATH`:
 
 - macOS/Linux: `~/.local/bin`
 
@@ -39,7 +39,7 @@ See [Troubleshooting](#troubleshooting) below for more details.
 ### Update to the latest version
 
 ```bash
-cd pdf-tool
+cd pdfwiz
 git pull origin main
 pip install --user .
 ```
@@ -47,13 +47,13 @@ pip install --user .
 ### Uninstall
 
 ```bash
-pip uninstall pdf-tool
+pip uninstall pdfwiz
 ```
 
 ## Usage
 
 ```bash 
-pdf-tool <command> [options]
+pdfwiz <command> [options]
 ```
 
 ### Available commands:
@@ -68,22 +68,22 @@ pdf-tool <command> [options]
 ### Example:
 
 ```bash
-pdf-tool merge file1.pdf file2.pdf -o merged.pdf
-pdf-tool rotate file.pdf -p 1:3 -a 90 -o rotated.pdf
+pdfwiz merge file1.pdf file2.pdf -o merged.pdf
+pdfwiz rotate file.pdf -p 1:3 -a 90 -o rotated.pdf
 ```
 
 Run:
 
 ```bash
-pdf-tool --help
-pdf-tool <command> --help
+pdfwiz --help
+pdfwiz <command> --help
 ```
 
 for full options.
 
 ## Specifying Pages and Ranges
 
-Many commands in `pdf-tool` allow you to operate on specific pages or ranges of pages in a PDF.
+Many commands in `pdfwiz` allow you to operate on specific pages or ranges of pages in a PDF.
 
 You can specify pages using:
 
@@ -109,8 +109,8 @@ You can specify pages using:
 2. **Clone** your fork locally:
 
     ```bash
-    git clone https://github.com/<your-username>/pdf-tool.git
-    cd pdf-tool
+    git clone https://github.com/<your-username>/pdfwiz.git
+    cd pdfwiz
     ```
 
 3. **Create** a new branch:
@@ -150,7 +150,7 @@ Your Python "scripts" folder may not be in your PATH.
 
     Add `%APPDATA%\Python\Scripts` to your User PATH via System &rarr; Environment Variables.
 
-Then restart your terminal and try `pdf-tool --help` again.
+Then restart your terminal and try `pdfwiz --help` again.
 
 ## License
 
