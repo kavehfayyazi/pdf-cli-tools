@@ -28,11 +28,12 @@ pip install pdf-tools
 
 ### Option 2 — Install from source
 
-
 ```bash
 git clone https://github.com/kavehfayyazi/pdf-tools.git
 cd pdf-tools
 pip install --user .
+# or 
+python3 -m pip install --user .
 ```
 
 If `pdf-tools` is not found after install, make sure the appropriate scripts folder is in your `PATH`:
@@ -42,6 +43,36 @@ If `pdf-tools` is not found after install, make sure the appropriate scripts fol
 - Windows: `%APPDATA%\Python\Scripts`
 
 See [Troubleshooting](#troubleshooting) below for more details.
+
+## Updating & Uninstalling
+
+### Update to the latest version
+
+If you installed from PyPI:
+
+```bash
+pip install --upgrade --user pdf-tools 
+# or
+python3 -m pip install --upgrade --user pdf-tools
+```
+
+If you installed from source:
+
+```bash
+cd pdf-tools
+git pull origin main
+pip install --user .
+# or
+python3 -m pip install --user .
+```
+
+### Uninstall
+
+```bash
+pip uninstall pdf-tools
+# or
+python3 -m pip uninstall pdf-tools
+```
 
 ## Usage
 
